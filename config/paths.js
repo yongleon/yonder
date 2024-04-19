@@ -1,5 +1,4 @@
-'use strict';
-
+//打包中需要的一些路径管理
 const path = require('path');
 const fs = require('fs');
 const getPublicUrlOrPath = require('react-dev-utils/getPublicUrlOrPath');

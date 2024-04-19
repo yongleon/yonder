@@ -1,5 +1,6 @@
 {
   "comment": "This is comment 1,不能直接注释,只能用元素当注释来备注,关键词,comment",
+  "comment_babel-preset-react-app": "对@babel/preset-env语法包的重写,目的:将ES6转化为ES5,让语法包可以识别react语法,实现代码转换",
   "name": "yonder",
   "version": "0.1.0",
   "private": true,
@@ -10,6 +11,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "antd": "^5.12.2",
     "babel-jest": "^27.4.2",
     "babel-loader": "^8.2.3",
     "babel-plugin-named-asset-import": "^0.3.8",
@@ -18,8 +20,10 @@
     "browserslist": "^4.18.1",
     "camelcase": "^6.2.1",
     "case-sensitive-paths-webpack-plugin": "^2.4.0",
+    "cross-env": "^7.0.3",
     "css-loader": "^6.5.1",
     "css-minimizer-webpack-plugin": "^3.2.0",
+    "dayjs": "^1.11.10",
     "dotenv": "^10.0.0",
     "dotenv-expand": "^5.1.0",
     "eslint": "^8.3.0",
@@ -32,7 +36,10 @@
     "jest": "^27.4.3",
     "jest-resolve": "^27.4.2",
     "jest-watch-typeahead": "^1.0.0",
+    "less": "^4.2.0",
+    "less-loader": "8",
     "mini-css-extract-plugin": "^2.4.5",
+    "moment": "^2.29.4",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-loader": "^6.2.1",
@@ -43,10 +50,13 @@
     "react-app-polyfill": "^3.0.0",
     "react-dev-utils": "^12.0.1",
     "react-dom": "^18.2.0",
+    "react-redux": "^9.0.4",
     "react-refresh": "^0.11.0",
+    "react-router-dom": "^6.21.1",
+    "react-scripts": "^5.0.1",
+    "redux": "^5.0.1",
     "resolve": "^1.20.0",
     "resolve-url-loader": "^4.0.0",
-    "sass-loader": "^12.3.0",
     "semver": "^7.3.5",
     "source-map-loader": "^3.0.0",
     "style-loader": "^3.3.1",
@@ -59,7 +69,7 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "comment_scripts": "react-scripts就是脚手架中自己对打包命令的一种封装,基于它打包,会调用node_moudles中的webpack等进行处理",
-  "comment_eject": "前三个分别是在本地起服务,构建打包,单元测试,",
+  "comment_eject": "前三个分别是在本地起服务,构建打包,单元测试, eject不可逆转,暴露了很多配置项和一些新的文件config/scripts",
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
@@ -136,9 +146,18 @@
     ],
     "resetMocks": true
   },
+  "comment_babel": "类似于babel.config.js对babel-loader的额外配置",
   "babel": {
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "babel-preset-stage-1": "^6.24.1",
+    "customize-cra": "^1.0.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.29.1",
+    "react-app-rewired": "^2.2.1"
   }
 }

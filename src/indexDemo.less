@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+
+}
+
+.vote{
+    width: 600px;
+    height: 300px;
+    border: 1px solid;
+    position: relative;
+  
+    .voteMain,
+    .voteBox{
+        width: 600px;
+        margin: 20px auto 0;
+        .voteMainCol{
+            .voteMainRow{
+                margin: 10px 0;
+                display: flex;
+                span{
+                    flex:1;
+                    text-align: right;
+                }
+                span+span{
+                    flex:2;
+                    text-align: center;
+                }
+
+        }
+    }
+    }
+    .voteFooter{
+        position: absolute;
+        bottom: 0;
+        width: 600px;
+        height: 60px;
+        display: flex;
+        margin: auto auto;
+        div{
+            flex: 1;
+            text-align: center;
+            span{
+                width: 100px;
+                height: 20px;
+                border: 1px solid;
+                display: inline-block;
+                text-align: center;
+                cursor:pointer;
+            } 
+
+        }
+    
+    }
+}

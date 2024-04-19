@@ -1,0 +1,47 @@
+.header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    min-height: 90px;
+    max-height: 240px;
+    background-color: aqua;
+    display: flex;
+    .header_flex{
+        flex: 1;
+        .header_flex_left{
+            overflow: hidden;
+            display: flex;
+           li{
+            float: left;
+            flex-shrink:0;
+            margin: 10px;
+            cursor: pointer;
+           }
+        }
+        .header_flex_center{
+            .header_search_container{
+                position: relative;
+                margin: 20px auto;
+                max-width :500px; 
+                .search_input{
+                    
+                }
+                .seacrh_dropdown{ 
+                    position: absolute;
+                    top: 40px;
+                    width: 100%;
+                    height: 600px;
+                    background-color: var(--input-boder);
+                    
+                }
+                // .seacrh_dropdown:hover{
+                //     width: 100%;
+                //     height: 600px;
+                //     background-color: rgb(255, 255, 255);
+
+                // }
+            }
+            
+        }
+    }
+}
